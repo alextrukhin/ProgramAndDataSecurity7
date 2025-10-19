@@ -7,6 +7,7 @@
 				This is the main landing page of the application.
 			</p>
 			<UButton to="/lab1" size="lg">Lab 1</UButton>
+			<UButton to="/lab2" size="lg">Lab 2</UButton>
 		</div>
 	</UContainer>
 </template>
