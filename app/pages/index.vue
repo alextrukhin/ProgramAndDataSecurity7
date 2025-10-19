@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const labs = [
+	{ name: "Lab 1", path: "/lab1" },
+	{ name: "Lab 2", path: "/lab2" },
+];
+</script>
 <template>
 	<UContainer>
 		<div class="relative flex flex-col text-center py-12">
@@ -6,8 +12,11 @@
 			<p class="text-lg mb-8">
 				This is the main landing page of the application.
 			</p>
-			<UButton to="/lab1" size="lg">Lab 1</UButton>
-			<UButton to="/lab2" size="lg">Lab 2</UButton>
+			<div class="flex flex-col gap-4">
+				<UButton v-for="lab of labs" :to="lab.path" size="lg">
+					{{ lab.name }}
+				</UButton>
+			</div>
 		</div>
 	</UContainer>
 </template>
