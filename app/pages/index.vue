@@ -2,6 +2,7 @@
 const labs = [
 	{ name: "Lab 1", path: "/lab1" },
 	{ name: "Lab 2", path: "/lab2" },
+	{ name: "Lab 3", path: "/lab3" },
 ];
 </script>
 <template>
